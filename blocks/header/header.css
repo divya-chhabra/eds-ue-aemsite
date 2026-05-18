@@ -1,6 +1,11 @@
 /* header and nav layout */
+.header-wrapper {
+    position: absolute;
+    top: 42px;
+    left: 0;
+    right: 0;
+}
 header .nav-wrapper {
-  background-color: var(--background-color);
   width: 100%;
   z-index: 2;
   position: fixed;
@@ -15,9 +20,7 @@ header nav {
   align-items: center;
   gap: 0 24px;
   margin: auto;
-  max-width: 1248px;
-  height: var(--nav-height);
-  padding: 0 24px;
+  height: auto;
   font-family: var(--body-font-family);
 }
 
@@ -38,9 +41,7 @@ header nav[aria-expanded='true'] {
   header nav {
     display: flex;
     justify-content: space-between;
-    gap: 0 32px;
-    max-width: 1264px;
-    padding: 0 32px;
+  
   }
 
   header nav[aria-expanded='true'] {
@@ -138,18 +139,31 @@ header nav[aria-expanded='true'] .nav-hamburger-icon::after {
     visibility: hidden;
   }
 }
+/* nav main */
+header .nav-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 77px;
+  background-color: #0E4D47;
+  border-radius: 18px;
+  color:#fff;
+  padding:13px 54px 13px 49px;
+  gap:0 32px;
+  width: 100%;
+}
 
 /* brand */
 header .nav-brand {
   grid-area: brand;
-  flex-basis: 128px;
+  flex-basis: 178px;
   font-size: var(--heading-font-size-s);
   font-weight: 700;
   line-height: 1;
 }
 
 header nav .nav-brand img {
-  width: 128px;
+  width: 100%;
   height: auto;
 }
 
@@ -228,6 +242,26 @@ header nav .nav-sections ul > li > ul > li {
     margin: 0;
   }
 
+  header nav .nav-sections .question-text {
+    text-decoration: none;
+    color:#DDE675;
+    font-family: "Space Grotesk";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px; /* 163.636% */
+    letter-spacing: -0.44px;
+  }
+
+  header nav .nav-sections p {
+   color: #FEFFF6;
+  font-family: Figtree;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+  }
+
   header nav .nav-sections .default-content-wrapper > ul > li {
     flex: 0 1 auto;
     position: relative;
@@ -267,6 +301,6 @@ header nav .nav-sections ul > li > ul > li {
 }
 
 /* tools */
-header nav .nav-tools {
+/* header nav .nav-tools {
   grid-area: tools;
-}
+} */
