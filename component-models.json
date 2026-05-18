@@ -190,6 +190,25 @@
     ]
   },
   {
+    "id": "head",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "logo-img",
+        "label": "Logo",
+        "multi": false
+      },
+      {
+        "component": "richtext",
+        "name": "contact-details",
+        "value": "",
+        "label": "Contact details",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
     "id": "hero",
     "fields": [
       {
