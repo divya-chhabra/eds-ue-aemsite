@@ -3,6 +3,7 @@
     "/content/eds-ue-aemsite/:/"
   ],
   "includes": [
-    "/content/eds-ue-aemsite/"
+    "/content/eds-ue-aemsite/",
+    "/content/dam/eds-ue-aemsite/"
   ]
 }
