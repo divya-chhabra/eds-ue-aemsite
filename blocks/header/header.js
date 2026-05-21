@@ -119,6 +119,11 @@ function applyHeaderMode( mode) {
 }
 
 function evaluateNavMode() {
+  while (document.getElementById('nav') === null) {
+    // eslint-disable-next-line no-console
+    console.warn("Nav not found, retrying...");
+    return requestAnimationFrame(evaluateNavMode);
+  }
   const nav = document.getElementById('nav');
   console.log("Evaluating nav mode", nav);
   if(!nav) return;
@@ -165,8 +170,6 @@ export default async function decorate(block) {
 
   // decorate nav DOM
   block.textContent = '';
-  const header = document.querySelector('header');
-  header.setAttribute('data-nav-mode', window.innerWidth < DESKTOP_BREAKPOINT ? 'mobile' : 'desktop'); // default to desktop mode, will be updated on load/resize
   const nav = document.createElement('nav');
   nav.id = 'nav';
   while (fragment.firstElementChild) nav.append(fragment.firstElementChild);
