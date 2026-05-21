@@ -3,6 +3,9 @@
     margin:0px;
     padding:0px;
 }
+header nav .nav-main .nav-brand a{
+    display:inline-block;
+}
 /* header and nav layout */
 
 /* header position fixed css */

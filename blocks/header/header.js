@@ -181,11 +181,23 @@ export default async function decorate(block) {
   nav.append(navMain);
 
   const navBrand = nav.querySelector('.nav-brand');
-  const brandLink = navBrand.querySelector('.button');
+  const brandLink = navBrand?.querySelector('a');
   if (brandLink) {
+    brandLink.href = '/';
     brandLink.className = '';
-    brandLink.closest('.button-container').className = '';
-  }
+    const buttonContainer = brandLink.closest('.button-container');
+    if (buttonContainer) buttonContainer.className = '';
+  } else if (navBrand) {
+    const brandPicture = navBrand.querySelector('picture');
+    const brandImage = navBrand.querySelector('img');
+    const brandMedia = brandPicture || brandImage;
+    if (brandMedia) {
+      const homeLink = document.createElement('a');
+      homeLink.href = '/';
+      homeLink.setAttribute('aria-label', 'Homepage');
+      brandMedia.parentNode.insertBefore(homeLink, brandMedia);
+      homeLink.appendChild(brandMedia);
+    }
 
   const navSections = nav.querySelector('.nav-sections');
   if (navSections) {
@@ -225,12 +237,5 @@ export default async function decorate(block) {
   navWrapper.className = 'nav-wrapper';
   navWrapper.append(nav);
   block.append(navWrapper);
-  window.addEventListener('load', function() {
-    console.log("Window loaded, checking nav layout...");
-    window.innerWidth >= 1200 ? 
-    applyHeaderMode(document.getElementsByTagName('header')[0], "desktop") 
-    : 
-    applyHeaderMode(document.getElementsByTagName('header')[0], "mobile");
-  });
-  window.addEventListener('resize', updateLayout);
+}
 }
