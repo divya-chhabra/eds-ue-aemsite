@@ -1,29 +1,32 @@
-*{
-    box-sizing: border-box;
-    margin:0px;
-    padding:0px;
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
 }
-header nav .nav-main .nav-brand a{
-    display:inline-block;
+
+header nav .nav-main .nav-brand a {
+  display: inline-block;
 }
+
 /* header and nav layout */
 
 /* header position fixed css */
 header[data-nav-mode="mobile"].header-wrapper {
-    position: fixed;
-    top: 70px;
-    left: 20px;
-    right: 20px;
-    z-index:2;
-    height:auto;
+  position: fixed;
+  top: 42px;
+  left: 77px;
+  right: 77px;
+  z-index: 2;
+  height: auto;
 }
+
 header[data-nav-mode="desktop"].header-wrapper {
-    position: fixed;
-    top: 42px;
-    left: 77px;
-    right: 77px;
-    z-index:2;
-    height:auto;
+  position: fixed;
+  top: 42px;
+  left: 77px;
+  right: 77px;
+  z-index: 2;
+  height: auto;
 }
 
 
@@ -34,101 +37,114 @@ header[data-nav-mode="desktop"] nav .nav-main {
   align-items: center;
   background-color: #0E4D47;
   border-radius: 18px;
-  color:#fff;
-  padding:13px 54px 13px 49px;
-  max-width:1286px;
+  color: #fff;
+  padding: 13px 54px 13px 49px;
+  max-width: 1286px;
   margin: 0 auto;
 }
+
 header[data-nav-mode="mobile"] nav .nav-main {
   display: block;
   background-color: #0E4D47;
   border-radius: 18px;
-  color:#fff;
-  padding:13px 54px 13px 49px;
-  
+  color: #fff;
+  padding: 13px 54px 13px 49px;
+
 }
 
 /* Logo CSS */
 header[data-nav-mode="desktop"] .nav-brand {
-  padding-right:36px;
+  padding-right: 36px;
 }
+
 header[data-nav-mode="mobile"] .nav-brand {
-  padding-right:0px;
-  width:178px;
+  padding-right: 0px;
+  width: 178px;
   margin: 0 auto;
 }
 
 
 /* nav sections */
-header[data-nav-mode="desktop"] nav .nav-sections{
-  border-left:2px solid #AABAE0;
-  padding-left:36px;
+header[data-nav-mode="desktop"] nav .nav-sections {
+  border-left: 2px solid #AABAE0;
+  padding-left: 36px;
   white-space: nowrap;
 }
+
 header[data-nav-mode="mobile"] nav .nav-sections {
-  border-top:1px solid #AABAE0;
-  padding-top:17px;
+  border-top: 1px solid #AABAE0;
+  padding-top: 17px;
   white-space: normal;
   text-align: center;
 }
 
 /* paragraph inside nav sections css */
 
-header nav .nav-sections p{ 
-   color: #FEFFF6;
-   font-family: "Figtree";
-   font-size: 22px;
-   font-style: normal;
-   font-weight: 400;
-   line-height: 36px;
-   margin:0px;
-   display: inline-block;
+header nav .nav-sections p {
+  color: #FEFFF6;
+  font-family: "Figtree";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+  margin: 0px;
+  display: inline-block;
 }
 
 /* span text inside paragraph and inside nav sections css */
 header nav .nav-sections .question-text {
   text-decoration: none;
-  color:#DDE675;
+  color: #DDE675;
   font-family: "Space Grotesk";
   font-size: 22px;
   font-style: normal;
   font-weight: 700;
-  line-height: 36px; /* 163.636% */
+  line-height: 36px;
+  /* 163.636% */
   letter-spacing: -0.44px;
 }
 
 
 @media (max-width: 768px) {
 
-      header[data-nav-mode="mobile"] nav .nav-main {
-      display: block;
-      background-color: #0E4D47;
-      border-radius: 18px;
-      color:#fff;
-      padding:10px 20px 20px 20px;
-
-      }
-
-      header nav .nav-sections p{ 
-      color: #FEFFF6;
-      font-family: Figtree;
-      font-size: 14px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 21px;
-      text-align: center;
-      margin:0px;
+  header[data-nav-mode="mobile"].header-wrapper {
+    position: fixed;
+    top: 70px;
+    left: 20px;
+    right: 20px;
+    z-index: 2;
+    height: auto;
   }
-      header nav .nav-sections .question-text {
-      color: #DDE675;
-      text-align: center;
-      font-family: "Space Grotesk";
-      font-size: 14px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: 21px; /* 150% */
-      letter-spacing: -0.28px;
+
+  header[data-nav-mode="mobile"] nav .nav-main {
+    display: block;
+    background-color: #0E4D47;
+    border-radius: 18px;
+    color: #fff;
+    padding: 10px 20px 20px 20px;
+
+  }
+
+  header nav .nav-sections p {
+    color: #FEFFF6;
+    font-family: Figtree;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: center;
+    margin: 0px;
+  }
+
+  header nav .nav-sections .question-text {
+    color: #DDE675;
+    text-align: center;
+    font-family: "Space Grotesk";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 21px;
+    /* 150% */
+    letter-spacing: -0.28px;
   }
 }
-
-
