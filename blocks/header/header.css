@@ -82,7 +82,7 @@ header[data-nav-mode="mobile"] nav .nav-sections {
 
 header nav .nav-sections p {
   color: #FEFFF6;
-  font-family: "Figtree";
+  font-family: 'Figtree', sans-serif;
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
@@ -95,7 +95,7 @@ header nav .nav-sections p {
 header nav .nav-sections .question-text {
   text-decoration: none;
   color: #DDE675;
-  font-family: "Space Grotesk";
+  font-family: 'Space Grotesk', sans-serif;
   font-size: 22px;
   font-style: normal;
   font-weight: 700;
@@ -124,22 +124,22 @@ header nav .nav-sections .question-text {
     padding: 10px 20px 20px 20px;
 
   }
-
-  header nav .nav-sections p {
+  header nav .nav-sections p{
     color: #FEFFF6;
-    font-family: Figtree;
+    font-family: 'Figtree', sans-serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 21px;
     text-align: center;
     margin: 0px;
+    display:block; 
   }
 
   header nav .nav-sections .question-text {
     color: #DDE675;
     text-align: center;
-    font-family: "Space Grotesk";
+    font-family: 'Space Grotesk', sans-serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 700;
