@@ -53,13 +53,7 @@
 					"name": "headingLink",
 					"label": "Heading link"
 				},
-				{
-					"component": "text",
-					"valueType": "string",
-					"name": "lookingForLabel",
-					"label": "Looking for label",
-					"value": "I'm looking for"
-				},
+				
 				{
 					"component": "reference",
 					"valueType": "string",
@@ -72,6 +66,13 @@
 					"valueType": "string",
 					"name": "imageAlt",
 					"label": "Image alt text"
+				},
+                {
+					"component": "text",
+					"valueType": "string",
+					"name": "lookingForLabel",
+					"label": "Looking for label",
+					"value": "I'm looking for"
 				},
 				{
 					"component": "richtext",
