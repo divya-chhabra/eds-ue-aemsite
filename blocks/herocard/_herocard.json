@@ -1,0 +1,86 @@
+{
+	"definitions": [
+		{
+			"title": "Herocard",
+			"id": "herocard",
+			"plugins": {
+				"xwalk": {
+					"page": {
+						"resourceType": "core/franklin/components/block/v1/block",
+						"template": {
+							"name": "Herocard",
+							"filter": "herocard"
+						}
+					}
+				}
+			}
+		},
+		{
+			"title": "Herocard Item",
+			"id": "herocard-item",
+			"plugins": {
+				"xwalk": {
+					"page": {
+						"resourceType": "core/franklin/components/block/v1/block/item",
+						"template": {
+							"name": "Herocard Item",
+							"model": "herocard-item"
+						}
+					}
+				}
+			}
+		}
+	],
+	"models": [
+		{
+			"id": "herocard-item",
+			"fields": [
+				{
+					"component": "text",
+					"valueType": "string",
+					"name": "eyebrow",
+					"label": "Eyebrow"
+				},
+				{
+					"component": "text",
+					"valueType": "string",
+					"name": "heading",
+					"label": "Heading"
+				},
+				{
+					"component": "reference",
+					"valueType": "string",
+					"name": "image",
+					"label": "Image",
+					"multi": false
+				},
+				{
+					"component": "text",
+					"valueType": "string",
+					"name": "imageAlt",
+					"label": "Image alt text"
+				},
+				{
+					"component": "aem-content",
+					"valueType": "string",
+					"name": "cta",
+					"label": "Primary CTA"
+				},
+				{
+					"component": "richtext",
+					"valueType": "string",
+					"name": "pillLinks",
+					"label": "Pill links (author as links)"
+				}
+			]
+		}
+	],
+	"filters": [
+		{
+			"id": "herocard",
+			"components": [
+				"herocard-item"
+			]
+		}
+	]
+}
