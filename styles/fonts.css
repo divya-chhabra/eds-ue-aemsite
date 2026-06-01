@@ -44,3 +44,8 @@
   font-family: 'Figtree';
   src: url('../fonts/Figtree/Figtree-VariableFont_wght.ttf') format('truetype');
 }
+
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  src: url('../fonts/Plus_Jakarta_Sans/PlusJakartaSans-VariableFont_wght.ttf') format('truetype');
+}

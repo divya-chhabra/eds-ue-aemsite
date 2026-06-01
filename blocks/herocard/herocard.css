@@ -1,0 +1,195 @@
+.herocard-wrapper {
+    padding: 0 !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+    width: 100% !important;
+    max-width: 100% !important;
+
+}
+
+.herocard {
+    width: 100% !important;
+    display: flex !important;
+}
+
+.herocard .card {
+    position: relative;
+    width: 50% !important;
+}
+
+.herocard .card#pcp {
+    background: #AABAE0;
+    padding: 209px 55px 139px 88px;
+
+}
+
+.herocard .card#hcp {
+    background: #DDE575;
+    padding: 209px 55px 139px 55px;
+}
+
+.herocard .card#pcp .card-title-heading-group {
+    position: absolute;
+    left: 399px;
+    right: 38px;
+}
+
+.herocard .card#hcp .card-title-heading-group {
+    position: absolute;
+    left: 376px;
+    right: 62px;
+}
+
+.herocard .card .card-title-heading-group .card-title {
+    color: #000;
+    font-family: Figtree;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.herocard .card .card-title-heading-group .card-heading {
+    color: #0E4D47;
+    font-family: "Space Grotesk";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.8px;
+    word-spacing: normal;
+
+}
+
+
+.herocard .card .card-title-heading-group .card-heading p svg {
+    position: relative;
+    right: -15px;
+
+}
+
+.herocard .card .card-image-content {
+    width: 65%;
+    height: 342px;
+}
+
+.herocard .card .card-image-content img {
+    width: 100%;
+}
+
+.herocard .card .card-accordion-pills {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 14px;
+
+}
+
+.herocard .card .card-accordion-heading {
+    color: #0E4D47;
+    font-family: "Space Grotesk";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.72px;
+    padding-bottom: 10px;
+    padding-top: 34px;
+    margin-bottom: 55px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.herocard .card .card-accordion-heading p {
+    display: inline-block;
+}
+
+.herocard #pcp .card-accordion-heading {
+    border-bottom: 2px solid #DDE575;
+}
+
+.herocard #hcp .card-accordion-heading {
+    border-bottom: 2px solid #AABAE0;
+    ;
+}
+
+.herocard .card .card-accordion-pills p a {
+    display: inline-block;
+    border-radius: 18px;
+    text-align: center;
+    font-family: "Plus Jakarta Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.herocard #pcp .card-accordion-pills p a {
+    background: #0E4D47;
+    color: #DDE575;
+}
+
+.herocard #hcp .card-accordion-pills p a {
+    background: #1C458D;
+    color: #FEFFF6;
+}
+
+.active {
+    visibility: hidden;
+}
+
+@media (max-width: 1200px) {
+    .herocard .card {
+        width: 100% !important;
+    }
+
+    .herocard .card#pcp {
+        background: #AABAE0;
+        padding: 230px 77px 35px 77px;
+    }
+
+    .herocard .card#pcp .card-title-heading-group {
+        position: static;
+        padding: 30px 0px 20px 0px;
+    }
+
+    .herocard .card#hcp {
+        background: #DDE575;
+        padding: 30px 77px 35px 77px;
+    }
+    .herocard .card#hcp .card-title-heading-group {
+        position: static;
+        padding: 30px 0px 20px 0px;
+    } 
+    .herocard .card .card-image-content {
+        height: auto;
+    }
+
+    .herocard {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .herocard .card#pcp {
+        background: #AABAE0;
+        padding: 267px 20px 35px 20px;
+    }
+
+    .herocard .card#hcp {
+        background: #DDE575;
+        padding: 30px 20px 35px 20px;
+    }
+
+    .herocard .card .card-accordion-heading {
+        font-size: 30px;
+        letter-spacing: -0.6px;
+         margin-bottom: 31px;
+    }
+
+    .herocard .card .card-accordion-pills p a{
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+    
+}
