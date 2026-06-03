@@ -23,6 +23,13 @@ export default function decorate(block) {
             element.classList.add(cardClasses[index]);
         });
     });
+    // Adding click event listener to the HCP card heading to show the leaving site modal
+
+    const hcpCard = document.querySelector('#hcp');
+    const hcpCardHeading = hcpCard.querySelector('.card-heading');
+    hcpCardHeading.addEventListener('click', (event) => {
+        window.leavingSiteModal.showModal();    
+    });
 
     herocardChildren.forEach((child, index) => {
         var cardTitleHeadingElement = document.createElement('div');
